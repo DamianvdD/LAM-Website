@@ -12,5 +12,3 @@ git clone https://github.com/DamianvdD/LAM-Website.git
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
-test
