@@ -4,3 +4,20 @@ body{
 .Container{
 
 }
+.Background{
+    padding: 2em;
+    margin: 50;
+    text-align: left;
+    font-size: 0px;
+    color: whitesmoke;
+    background-image: url(../Images/WireFrameLAM.jpg);
+    width: 50%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+
+}
+.Block1{
+    background-color: red;
+}
