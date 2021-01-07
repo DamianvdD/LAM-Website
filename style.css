@@ -16,7 +16,9 @@ body{
     margin-top: 0px;
     padding: 25px 25px 25px 25px;
     color: white;
-    
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 html,body{
     margin: 0;
