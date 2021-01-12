@@ -60,3 +60,56 @@ const quiz =
 			}
 		]
 	}
+	{
+		"question": "",
+		"answers": [{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			}
+		]
+	},
+	{
+		"question": "",
+		"answers": [{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			}
+		]
+	},
+	{
+		"question": "",
+		"answers": [{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			},
+			{
+				"answer": ""
+			}
+		]
+	}
+]
+}
