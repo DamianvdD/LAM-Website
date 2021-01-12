@@ -39,6 +39,7 @@ ul{
 li{
     display: inline;
     padding: 40px;
+    justify-content: flex-start|space-around;
     
 }
 
