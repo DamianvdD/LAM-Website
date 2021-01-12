@@ -34,8 +34,9 @@ ul{
 }
 li{
     display: inline;
-    padding: 40px;
-    justify-content: flex-start|space-around;
+    padding: 10px;
+    background-color: black;
+    margin-left: 45px;
     
 }
 
