@@ -12,7 +12,7 @@ body{
     margin-left: 35%;
     opacity: 0.9;
 }
-.nav{
+nav{
     background-color: white;
     margin-top: 0px;
     padding: 25px 25px 25px 25px;
@@ -27,7 +27,7 @@ html,body{
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
+
 ul{
     margin: 0;
     padding: 0;
@@ -35,7 +35,6 @@ ul{
 li{
     display: inline;
 }
-=======
 
 .Gegevens{
     margin-top: 200px;
@@ -45,4 +44,4 @@ li{
     display: inline-block;
     padding: 15px;
 }
->>>>>>> 07efec83d5816e38f99f5f75125403b090e2039e
+
