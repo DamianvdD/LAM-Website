@@ -51,7 +51,7 @@ li{
     font-size: 16px;
     margin: 0px 80px;
     transition-duration: 0.4s;
-    cursor: pointer;
+    flex: center;
     }
 image{
      background-attachment: fixed;
@@ -66,4 +66,4 @@ image{
     display: inline-block;
     padding: 15px;
 }
-}
+#------------------------------------------------
