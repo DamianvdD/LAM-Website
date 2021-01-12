@@ -3,73 +3,58 @@ const quiz =
     "quizID": "vragen",
     "quizMetaData":
     {
-        "title": "Lisser Art Museum",
-        "imageURI": "https://www.lamlisse.nl/wp-content/uploads/2018/03/LAM-Lisse-logo-white.svg"
-
+        "title": "Welk stuk ben jij!?"
     },
     "quizContent":		
 		[
 			{
-				"question": "In welke plaats is museum LAM?",
+				"question": "",
 				"answers": [{
-						"answer": "Lisse",
-						"feedback": true
+						"answer": ""
 					},
 					{
-						"answer": "Landgoed Keukenhof",
-						"feedback": true
+						"answer": ""
 					},
 					{
-						"answer": "Sassenheim",
-						"feedback": false
+						"answer": ""
 					},
 					{
-						"answer": "Haarlem",
-						"feedback": false
+						"answer": ""
 					},
 					{
-						"answer": "Lammerschans",
-						"feedback": false
+						"answer": ""
 					}
 				]
 			},
 			{
-				"question": "LAM – Heeft de collectie een thema?",
+				"question": "",
 				"answers": [{
-						"answer": "Street art",
-						"feedback": false
+						"answer": ""
 					},
 					{
-						"answer": "Food art",
-						"feedback": true
+						"answer": ""
 					},
 					{
-						"answer": "Colorfull art",
-						"feedback": false
+						"answer": ""
 					},
 					{
-						"answer": "Kitsch art",
-						"feedback": false
+						"answer": ""
 					}
 				]
 			},
 			{
-				"question": "Het zelfportret van Tom Friedman is gemaakt van: ?",
+				"question": "",
 				"answers": [{
-						"answer": "spaghetti",
-						"feedback": false
+						"answer": ""
 					},
 					{
-						"answer": "kauwgom",
-						"feedback": false
+						"answer": ""
 					},
 					{
-						"answer": "winegums",
-						"feedback": false
+						"answer": ""
 					},
 					{
-						"answer": "suikerklontjes",
-						"feedback": true
+						"answer": ""
 					}
 				]
 			}
