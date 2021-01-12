@@ -8,11 +8,13 @@ body{
     background-size: cover;
 }
 .Container{
-    margin-top: 350px;
+    padding: 0px 0px 0px 50px;
     background-color: white;
-    display: inline-block;
-    padding: 100px 100px 100px 100px;
-    margin-left: 35%;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 100px 80px;
+    flex: center;
     opacity: 0.9;
 }
 nav{
