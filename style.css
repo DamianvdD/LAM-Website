@@ -35,13 +35,18 @@ html,body{
 ul{
     margin: 0;
     padding: 0;
+    display: flex;
 }
 li{
     display: inline;
     padding: 10px;
     background-color: black;
     margin-left: 45px;
-    
+    background-attachment: fixed;
+    }
+image{
+     background-attachment: fixed;
+    background-size: cover;
 }
 
 .Gegevens{
