@@ -1,115 +1,80 @@
-const quiz =
+const quiz1 =
 {
-    "quizID": "vragen",
+    "quizID": "Welk stuk ben jij?",
     "quizMetaData":
     {
-        "title": "Welk stuk ben jij!?"
+        "title": "Lisser Art Museum",
     },
     "quizContent":		
 		[
 			{
-				"question": "",
+				"question": "Voor welke leeftijd is het Museum?",
 				"answers": [{
-						"answer": ""
+						"answer": "65 jaar en ouder",
+						"feedback": false
 					},
 					{
-						"answer": ""
+						"answer": "18 t/m 65",
+						"feedback": false
 					},
 					{
-						"answer": ""
+						"answer": "12 t/m 18",
+						"feedback": false
 					},
 					{
-						"answer": ""
+						"answer": "6 t/m 12",
+						"feedback": false
 					},
 					{
-						"answer": ""
+						"answer": "alle leeftijden",
+						"feedback": true
 					}
 				]
 			},
 			{
-				"question": "",
+				"question": "Waar ligt het LAM?",
 				"answers": [{
-						"answer": ""
+						"answer": "Amsterdam",
+						"feedback": false
 					},
 					{
-						"answer": ""
+						"answer": "Keukenhof",
+						"feedback": true
 					},
 					{
-						"answer": ""
+						"answer": "Drenthe",
+						"feedback": false
 					},
 					{
-						"answer": ""
+						"answer": "Den Haag",
+						"feedback": false
+					},
+					{
+						"answer": "Den Helder",
+						"feedback": false
 					}
+
 				]
 			},
 			{
-				"question": "",
+				"question": "Het zelfportret van Tom Friedman is gemaakt van: ?",
 				"answers": [{
-						"answer": ""
+						"answer": "spaghetti",
+						"feedback": false
 					},
 					{
-						"answer": ""
+						"answer": "kauwgom",
+						"feedback": false
+					}, 
+					{
+						"answer": "winegums",
+						"feedback": false
 					},
 					{
-						"answer": ""
-					},
-					{
-						"answer": ""
+						"answer": "suikerklontjes",
+						"feedback": true
 					}
 				]
 			}
 		]
 	}
-	{
-		"question": "",
-		"answers": [{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			}
-		]
-	},
-	{
-		"question": "",
-		"answers": [{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			}
-		]
-	},
-	{
-		"question": "",
-		"answers": [{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			},
-			{
-				"answer": ""
-			}
-		]
-	}
-]
-}
