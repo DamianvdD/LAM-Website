@@ -17,6 +17,17 @@ body{
     flex: center;
     opacity: 0.9;
 }
+.slide{
+    padding: 0px 0px 0px 50px;
+    background-color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 100px 80px;
+    flex: center;
+    opacity: 0.9;
+
+}
 nav{
     background-color: white;
     margin-top: 0px;
@@ -73,4 +84,3 @@ image{
     display: inline-block;
     padding: 15px;
 }
-#----Info
