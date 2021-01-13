@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" href="Quiz.html" href="Reviews.html" href="Info.html" href="index.html" href="Contact.html" href="quiz.js">
-    
+    <link rel="stylesheet" href="style.css" href="Quiz.html" href="Reviews.html" href="Info.html" href="index.html"
+        href="Contact.html" href="quiz.js">
+
 </head>
+
 <body>
     <div class="nav">
         <nav>
@@ -17,19 +20,109 @@
             <li><a href="Reviews.html">Reviews</a></li>
             <li><a href="Contact.html">Contact</a></li>
           </ul>
+                <a href="index.html"><img class="image" src="Assets/Images/LAMLogo2.jpg" /></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
     </div>
-    <div class="Container">
-        <div class="Header">
-            <h1>Welkom op de website van LAM</h1>
-            <section>
-                <article class="quiz">
-                    <div class="img"></div>
-                    <h2>Doe de quiz!</h2>
-                    <p>Laten we beginnen met het maken van de quiz. Laten we er achter komen welk stuk jij bent.</p>
-                    <a href="#">DOE DE QUIZ</a>
-                </article>
-            </section>
-            
+    <div class="wrapper" id="quizWrapper">
+        <div class="questionBox" id="questionBox">
+            <h2 class="quizTitle" id="quizTitle"></h2>
+            <h1 class="myQuestion" id="myQuestion"></h1>
+            <ul class="myAnswer" id="myAnswer"></ul>
         </div>
+        <div class="resultBox" id="resultBox">Einde</div>
+    </div>
+    <script>
+        const delayTime = 2000; // wachttijd voor de volgende vraag
+        const myQuestion = document.getElementById('myQuestion');
+        const myAnswer = document.getElementById('myAnswer');
+        const quizWrapper = document.getElementById('quizWrapper');
+        const questionBox = document.getElementById('questionBox');
+        const resultBox = document.getElementById('resultBox');
+        const quizTitle = document.getElementById('quizTitle');
+
+        let counter = 0; // aantal mutliple choice vragen
+        let quiz; // object met quiz vragen
+        let playerData = {}; // object, hierin worden de game gegevens opgeslagen
+
+        function init() {
+            quiz = quiz1; // kies de quiz
+            // quiz = quiz2; // kies de quiz
+            initQuiz(); // start de quiz
+        }
+
+        function initQuiz() {
+            playerData.goodAnswers = 0; // reset alle player game variabelen
+            playerData.wrongAnswers = 0; // reset alle player game variabelen
+            playerName = ""; // toekomstige uitbreiding naam speler opvragen
+            resultBox.style.display = "none"; // verberg de resultbox
+            quizTitle.innerHTML = quiz.quizMetaData.title; // laat titel van quiz zien
+            prepareQuestions(); // start de quiz
+        }
+
+        function prepareQuestions() {
+            questionBox.className = "questionBox-new"; // voorbereiden animatie
+            let quizImage = quiz.quizMetaData.imageURI; // image laden
+            quizWrapper.style.backgroundImage = "url(" + quizImage + ")"; // image laden
+            quizWrapper.style.backgroundRepeat = "no-repeat"; // image positioneren
+            quizWrapper.style.backgroundPosition = "right"; // image positioneren
+            quizWrapper.style.backgroundSize = "25%"; // image positioneren
+            quiz.answerClicked = false; // voorkom dubbel klikken op antwoord
+
+
+            if (counter < quiz.quizContent.length) { // test op aantal vragen
+                myQuestion.innerHTML = quiz.quizContent[counter].question; // laat vraag zien
+                myAnswer.innerHTML = "";
+                // zet de multiple choice antwoorden neer
+                for (let i = 0; i < quiz.quizContent[counter].answers.length; i++) {
+                    let answer = document.createElement('li');
+                    answer.className = "answer";
+                    answer.score = quiz.quizContent[counter].answers[i].feedback;
+                    answer.innerHTML = quiz.quizContent[counter].answers[i].answer;
+                    myAnswer.appendChild(answer);
+                    answer.addEventListener('click', evaluate, true)
+                }
+
+            }
+            else {
+                finishQuiz(); // sluit de quiz af
+            }
+        }
+
+        function evaluate(evt) {
+            // console.log(evt.target); // debug
+            if (!quiz.answerClicked) {
+                if (evt.target.score) {
+                    evt.target.className = "right";
+                    playerData.goodAnswers += 1; // increase good score
+                    console.log("correct answer");
+                } else {
+                    evt.target.className = "wrong";
+                    playerData.wrongAnswers += 1; // increase wrong score
+                    console.log("wrong answer");
+                }
+                quiz.answerClicked = true; // prevent double click
+            }
+            counter++;
+            questionBox.className = "questionBox";  // voorbereiden animatie
+            setTimeout(prepareQuestions, delayTime); // wacht 2 seconden voor nieuwe vraag
+        }
+
+        function finishQuiz() {
+            // afsluiting quiz geef feedback
+            questionBox.style.display = "none";
+            resultBox.style.display = "block";
+            quizWrapper.style.background = "silver";
+            resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
+        }
+
+        init(); // start it
+
+    </script>
 </body>
+
 </html>
