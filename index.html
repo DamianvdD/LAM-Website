@@ -7,8 +7,9 @@
     <title>Lisser Art Museum</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <script src = "./quiz.js"></script>
-    <link rel="stylesheet" href="style.css" href="Quiz.html" href="Reviews.html" href="Info.html" href="index.html" href="Contact.html">
+    <script src="./quiz.js"></script>
+    <link rel="stylesheet" href="style.css" href="Quiz.html" href="Reviews.html" href="Info.html" href="index.html"
+        href="Contact.html">
 </head>
 
 <body>
@@ -19,17 +20,17 @@
     <div class="nav">
         <nav>
             <ul>
-               <a href="index.html"><img class="image" src="Assets/Images/LAMLogo2.jpg"  /></a>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Info.html">Info</a></li>
-            <li><a href="Quiz.html">Quiz</a></li>
-            <li><a href="Reviews.html">Reviews</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
+                <a href="index.html"><img class="image" src="Assets/Images/LAMLogo2.jpg" /></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
     </div>
 
 
-</nav>
+    </nav>
 
 
 
@@ -44,11 +45,14 @@
                     <a href="#">Terug naar de Site</a>
                 </article>
             </section>
-            
+
         </div>
-        
+
     </div>
-    
+<div class="collums">
+    <div>QUIZ</div>
+    <div>Photoslider</div>
+</div>
     <div class="slide">
         <div class="Header">
             <h1>Welkom op de website van LAM</h1>
@@ -60,89 +64,89 @@
                     <a href="#">Terug naar de Site</a>
                 </article>
             </section>
-            
+
         </div>
 
-    <div class="Container2">
-        <div class="Block1">
-            Hey hoi hallo
+        <div class="Container2">
+            <div class="Block1">
+                Hey hoi hallo
+            </div>
         </div>
-    </div>
-    
-    <footer class="Gegevens">
-        <section class="">
-        <h3>Contactgegevens</h3>
-        <p>
-            Keukenhof 14 2161 AN Lisse <br>
-            Postbus 224 <br>
-            2170 AE Sassenheim <br>
-            0252 508 800
-                <br>
-            info@lamlisse.nl
-        </p>
-        </section>
-    </footer>
+
+        <footer class="Gegevens">
+            <section class="">
+                <h3>Contactgegevens</h3>
+                <p>
+                    Keukenhof 14 2161 AN Lisse <br>
+                    Postbus 224 <br>
+                    2170 AE Sassenheim <br>
+                    0252 508 800
+                    <br>
+                    info@lamlisse.nl
+                </p>
+            </section>
+        </footer>
 
 
-    <div class="slideshow-container">
+        <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="Assets/Images/monkey.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="Assets/Images/web.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="Assets/Images/pineapple.jpg" style="width:100%">
-          <div class="text"></div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="Assets/Images/monkey.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="Assets/Images/web.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="Assets/Images/pineapple.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
         </div>
         <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
 
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+</div>
 </body>

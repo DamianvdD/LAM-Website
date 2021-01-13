@@ -28,6 +28,16 @@ body{
     opacity: 0.9;
 
 }
+.collums{
+    display: flex;
+    margin: 0 80px;
+    justify-content: space-between;
+}
+.collums div{
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+}
 nav{
     background-color: white;
     margin-top: 0px;
