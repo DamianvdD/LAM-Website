@@ -28,7 +28,6 @@ nav{
     padding: 0;
     width: 100vw;
     list-style-type: none;
-    position: sticky;
 }
 html,body{
     margin: 0;
@@ -46,6 +45,11 @@ ul{
     background-color: #333;
     font-size:150%;
 }
+ul img{
+    position: sticky;
+    background-attachment: fixed;
+    background-size: cover;
+}
 li a{
   display: block;
   color: white;
@@ -57,15 +61,11 @@ li a:hover{
   background-color: #111;
   padding: 25px 100px 25px 100px;
 }
-image{
-     background-attachment: fixed;
-    background-size: cover;
-}
 
 .Gegevens{
     margin: 0;
     padding: 0;
-    margin-top: 9%;
+    margin-top: 20%;
     background-color: #333;
     display: flex;
     padding: 0px;
@@ -78,7 +78,7 @@ image{
     justify-content: space-between;
     padding: 16px 32px;
     text-align: center;
-    margin: 100px 10% 0px;
+    margin: 150px 10% 0px;
     flex: center;
 }
 .text{
@@ -89,11 +89,17 @@ image{
 }
 
 .slideshow-container{
-  padding: 2%;
+  padding: 0%;
   margin: 0px 0px 0px 7%;
   background-color: white;
 }
 /*hierboven staat de slider*/
+.text2{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width:60%;
+}
 footer{
     background-color: white;
     padding: 0px 0px 0px 50px;
