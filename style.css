@@ -68,26 +68,25 @@ html,body{
 }
 
 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: #333;
 }
-li{
-    display: inline;
-    padding: 10px;
-    background-color: lightgrey;
-    margin-left: 45px;
-    background-attachment: fixed;
-    border: none;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0px 80px;
-    transition-duration: 0.4s;
-    flex: center;
-    }
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding:10px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #111;
+}
 button{
     padding: 0;
     margin:0;
