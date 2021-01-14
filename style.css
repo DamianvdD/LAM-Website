@@ -87,13 +87,25 @@ image{
     background-size: cover;
 }
 
-.Gegevens{
-    margin-top: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
+.review{
     background-color: white;
-    display: inline-block;
-    padding: 15px;
+    padding: 0px 0px 0px 50px;
+    background-color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 100px 80px;
+    flex: center;
+    opacity: 0.9;
+}
+
+.Gegevens{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
 }
 
 @keyframes goodAnswerAnimation {
@@ -111,9 +123,11 @@ image{
 .wrapper{
   overflow: hidden;
   width: 80%;
-  margin: auto;
+  margin: 80px 10% 0px 10%;
   border: 4px solid rgb(255, 0, 0);
-  background-color: black;
+  background-color: white;
+  opacity: 0.9;
+  padding: 80px 0px 80px 0px;
 }
 .quizTitle {
   color: gray;
@@ -172,4 +186,22 @@ image{
   background-color: red;
   animation-name: wrongAnswerAnimation;
   animation-duration: 4s;
+}
+
+.quizflex{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: white;
+    padding: 0px 0px 0px 50px;
+    background-color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 100px 80px;
+    flex: center;
+    opacity: 0.9;
 }

@@ -48,70 +48,61 @@
         </div>
 
     </div>
+    <div class="quizflex">
+<p>ultricies eget, tempor sit amet, a ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas a</p>
+    <div class="slideshow-container">
 
-    <div class="collums">
-        <div>QUIZ</div>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="Assets/Images/monkey.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="Assets/Images/web.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="Assets/Images/pineapple.jpg" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Assets/Images/kreeft.jpg" style="width:40%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Assets/Images/monkey.jpg" style="width:50%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="Assets/Images/vase.jpg" style="width:50%">
+          <div class="text"></div>
+        </div>
+        
         </div>
         <br>
-
+        
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
         </div>
-
+        
         <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
         </script>
+        
     </div>
+</div>
     <div class="slide">
         <div class="Header">
             <h1>Welkom op de website van LAM</h1>
@@ -124,9 +115,10 @@
                 </article>
             </section>
         </div>
+    </div>
 
         <footer class="Gegevens">
-            <section class="">
+            <section>
                 <h3>Contactgegevens</h3>
                 <p>
                     Keukenhof 14 2161 AN Lisse <br>

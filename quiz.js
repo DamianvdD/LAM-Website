@@ -3,7 +3,8 @@ const quiz1 =
     "quizID": "Welk stuk ben jij?",
     "quizMetaData":
     {
-        "title": "Lisser Art Museum",
+		"title": "Lisser Art Museum",
+		"imageURI": "Assets/Images/LAMLogo2.jpg"
     },
     "quizContent":		
 		[
