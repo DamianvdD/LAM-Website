@@ -54,12 +54,13 @@ li a{
   display: block;
   color: white;
   text-align: center;
-  padding:10px;
   text-decoration: none;
+  padding: 25px 20px ;
+  min-width: 200px;
 }
+
 li a:hover{
-  background-color: #111;
-  padding: 25px 100px 25px 100px;
+  background-color:black;
 }
 
 .Gegevens{
@@ -80,24 +81,24 @@ li a:hover{
     text-align: center;
     margin: 150px 10% 0px;
     flex: center;
+    min-height: 400px;
 }
 .text{
   padding: 2%;
   margin: 0px 0px 0px 5%;
-  background-color: white;
   margin-right: 10px;
 }
 
 .slideshow-container{
   padding: 0%;
   margin: 0px 0px 0px 7%;
-  background-color: white;
+  
 }
 /*hierboven staat de slider*/
 .text2{
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     width:60%;
 }
 footer{

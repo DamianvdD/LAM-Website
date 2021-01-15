@@ -56,6 +56,54 @@ const quiz1 =
 					}
 
 				]
+			},		{
+				"question": "Hoelang duurt de kunstbelevenis bij het LAM?",
+				"answers": [{
+						"answer": "12 minuten",
+						"feedback": false
+					},
+					{
+						"answer": "1 uur",
+						"feedback": false
+					},
+					{
+						"answer": "45 minuten",
+						"feedback": true
+					},
+					{
+						"answer": "3 uur",
+						"feedback": false
+					},
+					{
+						"answer": "30 minuten",
+						"feedback": false
+					}
+
+				]
+			},		{
+				"question": "Waar ligt het LAM?",
+				"answers": [{
+						"answer": "Amsterdam",
+						"feedback": false
+					},
+					{
+						"answer": "Keukenhof",
+						"feedback": true
+					},
+					{
+						"answer": "Drenthe",
+						"feedback": false
+					},
+					{
+						"answer": "Den Haag",
+						"feedback": false
+					},
+					{
+						"answer": "Den Helder",
+						"feedback": false
+					}
+
+				]
 			},
 			{
 				"question": "Het zelfportret van Tom Friedman is gemaakt van: ?",

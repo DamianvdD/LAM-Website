@@ -67,12 +67,12 @@ li a{
   display: block;
   color: white;
   text-align: center;
-  padding:10px;
+  padding: 25px 20px ;
+  min-width: 200px;
   text-decoration: none;
 }
 li a:hover{
   background-color: #111;
-  padding: 25px 100px 25px 100px;
 }
 button{
     padding: 0;
@@ -305,7 +305,13 @@ footer{
             quizWrapper.style.background = "silver";
             resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
         }
-
+        
+        if (playerData.goodAnswers == 1 ){
+            resultBox.innerHTML = "<h1>lol</h1>"
+            console.log("1 goed")
+        }else {
+            resultBox.innerHTML = "<h1>nopeee</h1>"
+        }
         init(); // start it
 
     </script>
