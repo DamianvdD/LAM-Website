@@ -32,7 +32,6 @@
   opacity: 0.9;
   display: flex;
   justify-content: space-around;
-  border: 5px solid black;
 }
 
 nav{
@@ -46,6 +45,7 @@ nav{
     width: 100vw;
     list-style-type: none;
     position: sticky;
+    display: flex;
 }
 html,body{
     margin: 0;
@@ -62,13 +62,14 @@ ul{
     display: flex;
     background-color: #333;
     font-size:150%;
+    flex-grow: 1;
 }
 li a{
   display: block;
   color: white;
   text-align: center;
   padding: 25px 20px ;
-  min-width: 200px;
+  min-width: 300px;
   text-decoration: none;
 }
 li a:hover{
@@ -123,7 +124,7 @@ image{
   overflow: hidden;
   width: 80%;
   margin: 80px 10% 0px 10%;
-  border: 5px solid black;
+  border: 1px solid black;
   background-color: white;
   opacity: 0.9;
   padding: 80px 0px 80px 0px;
@@ -202,8 +203,8 @@ footer{
 <body>
     <div class="nav">
         <nav>
+            <a href="index.html"><img class="image" src="Assets/Images/LAMLogo2.jpg"  /></a>
             <ul>
-                <a href="index.html"><img class="image" src="Assets/Images/LAMLogo2.jpg"  /></a>
             <li><a href="index.html">Home</a></li>
             <li><a href="Quiz.html">Quiz</a></li>
             <li><a href="Reviews.html">Reviews</a></li>
@@ -306,12 +307,7 @@ footer{
             resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
         }
         
-        if (playerData.goodAnswers == 1 ){
-            resultBox.innerHTML = "<h1>lol</h1>"
-            console.log("1 goed")
-        }else {
-            resultBox.innerHTML = "<h1>nopeee</h1>"
-        }
+
         init(); // start it
 
     </script>

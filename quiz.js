@@ -81,46 +81,46 @@ const quiz1 =
 
 				]
 			},		{
-				"question": "Waar ligt het LAM?",
+				"question": "Is Tom Friedman een kunstenaar??",
 				"answers": [{
-						"answer": "Amsterdam",
-						"feedback": false
-					},
-					{
-						"answer": "Keukenhof",
+						"answer": "ZEKER WEL!",
 						"feedback": true
 					},
 					{
-						"answer": "Drenthe",
+						"answer": "JA",
+						"feedback": true
+					},
+					{
+						"answer": "Misschien",
 						"feedback": false
 					},
 					{
-						"answer": "Den Haag",
+						"answer": "NEE",
 						"feedback": false
 					},
 					{
-						"answer": "Den Helder",
+						"answer": "ZEKER NIET!",
 						"feedback": false
-					}
+					},
 
 				]
 			},
 			{
-				"question": "Het zelfportret van Tom Friedman is gemaakt van: ?",
+				"question": "Deze Landingspage was voor het vak: ?",
 				"answers": [{
-						"answer": "spaghetti",
+						"answer": "Nederlands",
 						"feedback": false
 					},
 					{
-						"answer": "kauwgom",
-						"feedback": false
+						"answer": "Beroepsopdracht",
+						"feedback": true
 					}, 
 					{
-						"answer": "winegums",
+						"answer": "Geen vak",
 						"feedback": false
 					},
 					{
-						"answer": "suikerklontjes",
+						"answer": "Bijna van alle vakken",
 						"feedback": true
 					}
 				]

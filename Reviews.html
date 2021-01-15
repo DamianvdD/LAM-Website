@@ -18,18 +18,17 @@
     background-size: cover;
 }
     .review{
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     padding: 0px 0px 0px 50px;
-    background-color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 100px 80px;
     flex: center;
-    opacity: 0.9;
-    text-align: center;
+    text-align: left;
+    color:black;
 }
 h1{
-    text-align: center;
+    text-align: left;
 }
 nav{
     background-color: white;
@@ -42,6 +41,7 @@ nav{
     width: 100vw;
     list-style-type: none;
     position: sticky;
+    display: flex;
 }
 html,body{
     margin: 0;
@@ -58,13 +58,14 @@ ul{
     display: flex;
     background-color: #333;
     font-size:150%;
+    flex-grow: 1;
 }
 li a{
   display: block;
   color: white;
   text-align: center;
   padding: 25px 20px ;
-  min-width: 200px;
+  min-width: 300px;
   text-decoration: none;
 }
 li a:hover{
@@ -99,8 +100,8 @@ footer{
 <body>
     <div class="nav">
         <nav>
+            <a href="index.html"><img class="image" src="Assets/Images/LAMLogo2.jpg"  /></a>
             <ul>
-                <a href="index.html"><img class="image" src="Assets/Images/LAMLogo2.jpg"  /></a>
             <li><a href="index.html">Home</a></li>
             <li><a href="Quiz.html">Quiz</a></li>
             <li><a href="Reviews.html">Reviews</a></li>
@@ -111,11 +112,11 @@ footer{
     <div class="review">
         <h1>REVIEWS</h1><br>
         <section>
-        <p><h3>P.Kuipers</h3>Mijn bezoek aan het Lisser Art Museum was erg inspirerend. De kunstwerken zijn modern en uniek.<br> Ik vind het ook bijzonder dat ze geen kaartjes met informatie bij de kunstwerken hebben staan<br> en dingen zoals dat op hun eigen manier aanpakken.<br> Ik zou sowieso nog eens naar het LAM gaan.</p><br>
-        <p><h3>B.de Reus</h3>Het was wel leuk alleen ik kreeg vaak trek in eten door al het kunst dat er was.<br> volgende keer ga ik meer eten meenemen.<br>#hongerige bezoeker</p><br>
-        <p><h3>T.de Vries</h3>Mijn bezoek aan het LAM was erg prettig, want ik heb nooit echt wat met kunst.<br>Maar bij dit museum sprak de kunst mij meer aan dan <br>dat het normal gesproken doet.</p><br>
-        <p><h3>M.Jackson</h3>This museum is better than the video clip of thriller</p><br>
-        <p><h3>G.Ramsay</h3>The artwork was stunning, but the food there was dry and overcooked.</p><br>
+        <p class="text10"><h3>P.Kuipers</h3>Mijn bezoek aan het Lisser Art Museum was erg inspirerend. De kunstwerken zijn modern en uniek.<br> Ik vind het ook bijzonder dat ze geen kaartjes met informatie bij de kunstwerken hebben staan<br> en dingen zoals dat op hun eigen manier aanpakken.<br> Ik zou sowieso nog eens naar het LAM gaan.</p><br>
+        <p class="text10"><h3>B.de Reus</h3>Het was wel leuk alleen ik kreeg vaak trek in eten door al het kunst dat er was.<br> volgende keer ga ik meer eten meenemen.<br>#hongerige bezoeker</p><br>
+        <p class="text10"><h3>T.de Vries</h3>Mijn bezoek aan het LAM was erg prettig, want ik heb nooit echt wat met kunst.<br>Maar bij dit museum sprak de kunst mij meer aan dan <br>dat het normal gesproken doet.</p><br>
+        <p class="text10"><h3>R.Andom</h3>Het is zeker een aanrader voor mensen die van kunst houden<br>en het duurt geen uren voordat je alles gezien hebt.</p><br>
+        <p class="text10"><h3>G.Ramsay</h3>The artwork was stunning, but the food there was dry and overcooked.</p><br>
     </section>
     </div>
     <footer class="Gegevens">

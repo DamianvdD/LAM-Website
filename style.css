@@ -13,7 +13,7 @@ body{
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
-    margin: 100px 80px;
+    margin: 100px 5% 12% 5%;
     flex: center;
     opacity: 0.9;
 }
@@ -28,6 +28,7 @@ nav{
     padding: 0;
     width: 100vw;
     list-style-type: none;
+    display: flex;
 }
 html,body{
     margin: 0;
@@ -44,6 +45,7 @@ ul{
     display: flex;
     background-color: #333;
     font-size:150%;
+    flex-grow: 1;
 }
 ul img{
     position: sticky;
@@ -56,7 +58,7 @@ li a{
   text-align: center;
   text-decoration: none;
   padding: 25px 20px ;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 li a:hover{
@@ -77,11 +79,9 @@ li a:hover{
 .section3{
     display: flex;
     justify-content: space-between;
-    padding: 16px 32px;
+    padding: 0px 100px 0px 0px;
     text-align: center;
-    margin: 150px 10% 0px;
-    flex: center;
-    min-height: 400px;
+    min-height: 50%;
 }
 .text{
   padding: 2%;
@@ -90,8 +90,9 @@ li a:hover{
 }
 
 .slideshow-container{
-  padding: 0%;
-  margin: 0px 0px 0px 7%;
+  padding: 0% 0px;
+  height: 50%;
+  
   
 }
 /*hierboven staat de slider*/
@@ -100,6 +101,7 @@ li a:hover{
     padding: 0;
     background-color: rgba(255,255,255,0.9);
     width:60%;
+    margin: 0px 80px;
 }
 footer{
     background-color: white;
