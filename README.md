@@ -1,9 +1,7 @@
 # Dit is de Repository voor de BO opdracht voor het LAM
 
-Brought by Damian van der Dennen & Tatum de Vries voor het LAM Museum
-
 ## Live Website
-Link naar de Website: http://30921.hosts1.ma-cloud.nl/LAMWebsite/index.html
+Link naar de Website: http://28879.hosts1.ma-cloud.nl/LAM-Website/index.html
 
 ## Planning
 
