@@ -343,7 +343,7 @@
             resultBox.style.display = "block";
             quizWrapper.style.background = "silver";
             if (playerData.goodAnswers == 1) {
-                resultBox.innerHTML = "<h2>1 goed(moet tekst veranderen)</h2>";
+                resultBox.innerHTML = "<img scr='/Assets/Images/10.jpg'/>";
             }
             else if (playerData.goodAnswers == 2) {
                 resultBox.innerHTML = "<h2>2 goed(moet tekst veranderen)</h2>"
@@ -355,7 +355,7 @@
                 resultBox.innerHTML = "<h2>4 goed(moet tekst veranderen)</h2>"
             }
             else if (playerData.goodAnswers == 5) {
-                resultBox.innerHTML = "<h2>alles goed(moet tekst veranderen)</h2>"
+                resultBox.innerHTML = "<img scr=\"Assets/Images/10.jpg\"><h2>alles goed(moet tekst veranderen)</h2>"
             }
             else {
                 resultBox.innerHTML = "<h2>noob" + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
