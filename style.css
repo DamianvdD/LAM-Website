@@ -78,8 +78,6 @@ li a:hover{
 /*hieronder staat de slider*/
 .section3{
     display: flex;
-    justify-content: space-between;
-    padding: 0px 100px 0px 0px;
     text-align: center;
     min-height: 50%;
 }
@@ -92,7 +90,7 @@ li a:hover{
 .slideshow-container{
   padding: 0% 0px;
   height: 50%;
-  
+  margin-left: auto;
   
 }
 /*hierboven staat de slider*/
@@ -103,6 +101,7 @@ li a:hover{
     width:60%;
     margin: 0px 80px;
 }
+
 footer{
     background-color: white;
     padding: 0px 0px 0px 50px;

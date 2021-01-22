@@ -4,7 +4,7 @@ const quiz1 =
     "quizMetaData":
     {
 		"title": "Lisser Art Museum",
-		"imageURI": "Assets/Images/LAMLogo2.jpg"
+		"imageURI": ""
     },
     "quizContent":		
 		[

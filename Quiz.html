@@ -30,17 +30,21 @@
         text-decoration: none;
         margin: 80px 10% 0px 10%;
         flex: center;
-        opacity: 0.9;
+        background-color: rgba(255, 255, 255, 0.9);
         display: flex;
         justify-content: space-around;
     }
-
+.end-image{
+    opacity: initial;
+    width: 500px;
+    height: auto;
+}
     nav {
         background-color: white;
         margin-top: 0px;
         padding: 25px 25px 25px 25px;
         color: white;
-        opacity: 0.9;
+        opacity: 0.91;
         margin: 0;
         padding: 0;
         width: 100vw;
@@ -100,7 +104,7 @@
         text-decoration: none;
         margin: 100px 80px;
         flex: center;
-        opacity: 0.9;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 
     .Gegevens {
@@ -149,8 +153,7 @@
         width: 80%;
         margin: 80px 10% 0px 10%;
         border: 1px solid black;
-        background-color: white;
-        opacity: 0.9;
+        background-color: rgba(255, 255, 255, 0.9);
         padding: 80px 0px 80px 0px;
     }
 
@@ -171,6 +174,7 @@
         padding: 20px;
         width: 80%;
         margin-left: 0px;
+
     }
 
     .questionBox-new {
@@ -243,15 +247,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Quiz.html">Quiz</a></li>
                 <li><a href="Reviews.html">Reviews</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
     </div>
     <div class=container>
-        <img src="Assets/Images/LAMLogo2.jpg">
         <h2> DOE NU DE QUIZ:</h2>
-        <img src="Assets/Images/LAMLogo2.jpg">
-    </div>
+      </div>
     <div class="wrapper" id="quizWrapper">
         <div class="questionBox" id="questionBox">
             <h2 class="quizTitle" id="quizTitle"></h2>
@@ -343,24 +345,23 @@
             // afsluiting quiz geef feedback
             questionBox.style.display = "none";
             resultBox.style.display = "block";
-            quizWrapper.style.background = "silver";
             if (playerData.goodAnswers == 1) {
-                resultBox.innerHTML = "<img src='/Assets/Images/10.jpg'/>";
+                resultBox.innerHTML = "<h2>Je bent een pakket, wegens dat er meer in je zit dan dat je laat zien.</h2><img src='/Assets/Images/pakket.jpg'/>";
             }
             else if (playerData.goodAnswers == 2) {
-                resultBox.innerHTML = "<h2>2 goed(moet tekst veranderen)</h2>"
+                resultBox.innerHTML = "<h2>Je hebt hongerig naar kunst</h2><img class=\"end-image\" src='/Assets/Images/vase.jpg'/>"
             }
             else if (playerData.goodAnswers == 3) {
-                resultBox.innerHTML = "<h2>3 goed(moet tekst veranderen)</h2>";
+                resultBox.innerHTML = "<h2>Je bent een kartonnen leeuw</h2><img class=\"end-image\" src='/Assets/Images/4.jpg'/>";
             }
             else if (playerData.goodAnswers == 4) {
-                resultBox.innerHTML = "<h2>4 goed(moet tekst veranderen)</h2>"
+                resultBox.innerHTML = "<h2>Je bent de gouden Ananas</h2><img class=\"end-image\" src='/Assets/Images/pineapple.jpg'/>"
             }
             else if (playerData.goodAnswers == 5) {
-                resultBox.innerHTML = "<img scr=\"Assets/Images/10.jpg\"><h2>alles goed(moet tekst veranderen)</h2>"
+                resultBox.innerHTML = "<h2>Je bent een diamant</h2><img class=\"end-image\" src='/Assets/Images/6.jpg'/>"
             }
             else {
-                resultBox.innerHTML = "<h2>noob" + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
+                resultBox.innerHTML = "<h2>Je bent de bananenschil</h2><img class=\"end-image\" src='/Assets/Images/10.jpg'/>";
             }
         }
 
@@ -368,7 +369,7 @@
         init(); // start it
 
     </script>
-    <footer class="Gegevens">
+    <footer class="Gegevens" id="footer">
         <section>
             <h3>Contactgegevens</h3>
             <p>
